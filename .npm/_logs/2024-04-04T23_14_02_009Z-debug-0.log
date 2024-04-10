@@ -1,0 +1,115 @@
+0 verbose cli /usr/local/bin/node /usr/local/bin/npm
+1 info using npm@10.5.0
+2 info using node@v20.12.1
+3 timing npm:load:whichnode Completed in 1ms
+4 timing config:load:defaults Completed in 1ms
+5 timing config:load:file:/usr/local/lib/node_modules/npm/npmrc Completed in 1ms
+6 timing config:load:builtin Completed in 1ms
+7 timing config:load:cli Completed in 0ms
+8 timing config:load:env Completed in 1ms
+9 timing config:load:file:/.npmrc Completed in 0ms
+10 timing config:load:project Completed in 0ms
+11 timing config:load:file:/Users/sohyun/.npmrc Completed in 0ms
+12 timing config:load:user Completed in 0ms
+13 timing config:load:file:/usr/local/etc/npmrc Completed in 0ms
+14 timing config:load:global Completed in 0ms
+15 timing config:load:setEnvs Completed in 0ms
+16 timing config:load Completed in 3ms
+17 timing npm:load:configload Completed in 3ms
+18 timing config:load:flatten Completed in 1ms
+19 timing npm:load:mkdirpcache Completed in 0ms
+20 timing npm:load:mkdirplogs Completed in 0ms
+0 verbose cli /usr/local/bin/node /usr/local/bin/npm
+21 verbose title npm config get prefix
+22 verbose argv "config" "get" "prefix"
+23 timing npm:load:setTitle Completed in 5ms
+24 timing npm:load:display Completed in 1ms
+1 info using npm@10.5.0
+25 verbose logfile logs-max:10 dir:/Users/sohyun/.npm/_logs/2024-04-04T23_14_02_009Z-
+2 info using node@v20.12.1
+3 timing npm:load:whichnode Completed in 1ms
+4 timing config:load:defaults Completed in 1ms
+5 timing config:load:file:/usr/local/lib/node_modules/npm/npmrc Completed in 1ms
+6 timing config:load:builtin Completed in 1ms
+7 timing config:load:cli Completed in 1ms
+8 timing config:load:env Completed in 0ms
+9 timing config:load:file:/Users/sohyun/Library/Caches/typescript/5.3/.npmrc Completed in 0ms
+10 timing config:load:project Completed in 0ms
+11 timing config:load:file:/Users/sohyun/.npmrc Completed in 0ms
+12 timing config:load:user Completed in 0ms
+13 timing config:load:file:/usr/local/etc/npmrc Completed in 0ms
+14 timing config:load:global Completed in 0ms
+15 timing config:load:setEnvs Completed in 1ms
+16 timing config:load Completed in 4ms
+17 timing npm:load:configload Completed in 4ms
+18 timing config:load:flatten Completed in 1ms
+19 timing npm:load:mkdirpcache Completed in 0ms
+20 timing npm:load:mkdirplogs Completed in 0ms
+21 verbose title npm install types-registry@latest
+22 verbose argv "install" "--ignore-scripts" "types-registry@latest"
+23 timing npm:load:setTitle Completed in 6ms
+24 timing npm:load:display Completed in 0ms
+25 verbose logfile logs-max:10 dir:/Users/sohyun/.npm/_logs/2024-04-04T23_14_02_009Z-
+26 verbose logfile /Users/sohyun/.npm/_logs/2024-04-04T23_14_02_009Z-debug-0.log
+27 timing npm:load:logFile Completed in 4ms
+28 timing npm:load:timers Completed in 0ms
+29 timing npm:load:configScope Completed in 0ms
+30 timing npm:load Completed in 27ms
+26 verbose logfile /Users/sohyun/.npm/_logs/2024-04-04T23_14_02_009Z-debug-0.log
+27 timing npm:load:logFile Completed in 4ms
+28 timing npm:load:timers Completed in 0ms
+29 timing npm:load:configScope Completed in 0ms
+30 timing npm:load Completed in 27ms
+31 timing command:config Completed in 1ms
+32 verbose exit 0
+33 timing npm Completed in 63ms
+34 info ok
+31 timing arborist:ctor Completed in 0ms
+32 silly logfile done cleaning log files
+33 timing arborist:ctor Completed in 0ms
+34 timing idealTree:init Completed in 5ms
+35 http fetch GET 200 https://registry.npmjs.org/npm 37715ms
+36 http fetch GET 200 https://registry.npmjs.org/types-registry 65189ms (cache miss)
+37 timing idealTree:userRequests Completed in 65199ms
+38 silly idealTree buildDeps
+39 silly fetch manifest types-registry@0.1.684
+40 silly placeDep ROOT types-registry@0.1.684 OK for:  want: 0.1.684
+41 timing idealTree:#root Completed in 8ms
+42 timing idealTree:node_modules/types-registry Completed in 0ms
+43 timing idealTree:buildDeps Completed in 9ms
+44 timing idealTree:fixDepFlags Completed in 0ms
+45 timing idealTree Completed in 65215ms
+46 timing reify:loadTrees Completed in 65215ms
+47 timing reify:diffTrees Completed in 1ms
+48 silly reify moves {}
+49 timing reify:retireShallow Completed in 2ms
+50 timing reify:createSparse Completed in 1ms
+51 timing reify:loadBundles Completed in 0ms
+52 silly audit bulk request { 'types-registry': [ '0.1.684' ] }
+53 silly tarball no local data for types-registry@https://registry.npmjs.org/types-registry/-/types-registry-0.1.684.tgz. Extracting by manifest.
+54 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 426ms
+55 timing auditReport:getReport Completed in 428ms
+56 silly audit report {}
+57 timing auditReport:init Completed in 0ms
+58 timing reify:audit Completed in 429ms
+59 http fetch GET 200 https://registry.npmjs.org/types-registry/-/types-registry-0.1.684.tgz 42533ms (cache miss)
+60 timing reifyNode:node_modules/types-registry Completed in 42540ms
+61 timing reify:unpack Completed in 42540ms
+62 timing reify:unretire Completed in 0ms
+63 timing build:queue Completed in 0ms
+64 timing build:deps Completed in 1ms
+65 timing build Completed in 1ms
+66 timing reify:build Completed in 2ms
+67 timing reify:trash Completed in 0ms
+68 timing reify:save Completed in 11ms
+69 timing reify Completed in 107813ms
+70 silly ADD node_modules/types-registry
+71 timing command:install Completed in 107817ms
+72 notice
+72 notice New patch version of npm available! 10.5.0 -> 10.5.1
+72 notice Changelog: <https://github.com/npm/cli/releases/tag/v10.5.1>
+72 notice Run `npm install -g npm@10.5.1` to update!
+72 notice
+73 verbose exit 0
+74 timing npm Completed in 107950ms
+75 info ok
