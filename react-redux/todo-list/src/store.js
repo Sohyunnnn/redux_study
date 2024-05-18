@@ -1,5 +1,9 @@
 import {createStore} from 'redux';
 
+// 초기 상태를 스토리지에서 불러오기
+const initialState = JSON.parse(localStorage.getItem('todos')) || [];
+
+
 
 const ADD= 'ADD';
 const DELETE = 'DELETE';
@@ -18,7 +22,7 @@ const deleteToDo =id => {
   }
 }
 
-const reducer = (state= [], action) =>{
+const reducer = (state= initialState, action) =>{
   switch(action.type){
     case ADD: 
       return [{text:action.text, id: Date.now()}, ...state];
