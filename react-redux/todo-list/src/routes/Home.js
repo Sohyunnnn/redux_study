@@ -1,6 +1,9 @@
 import React, { useState } from 'react'
+import { connect } from 'react-redux';
 
-const Home = () => {
+const Home = ({toDos}) => {
+  console.log(toDos);
+
   const [text, setText] = useState('');
 
   function onChage(e){
@@ -20,9 +23,16 @@ const Home = () => {
       <input type='text' value={text} onChange={onChage}/>
       <button>Add</button>
     </form>
-    <ul></ul>
+    <ul>
+      {JSON.stringify(toDos)}
+    </ul>
     </>
   )
 }
 
-export default Home
+function mapStateToProps(state){
+  return {toDos: state}
+}
+
+
+export default connect(mapStateToProps) (Home);

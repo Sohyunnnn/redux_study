@@ -33,7 +33,7 @@ const reducer = (state= [], action) =>{
 
 const store= createStore(reducer);
 
-store.subscribe()
+// store.subscribe()
 
 export default store;
 
