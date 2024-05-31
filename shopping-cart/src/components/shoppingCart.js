@@ -25,14 +25,15 @@ const ShoppingCart = () => {
   return (
     <div>
       <h1>Products</h1>
-      <ul>
+      <div style={{display:'flex'}}>
         {products.map((product) => (
-          <li key={product.id}>
-            {product.name} - ${product.price.toFixed(2)}
-            <button onClick={() => handleAddToCart(product)}>Add to Cart</button>
-          </li>
+          <div key={product.id} style={{marginRight:'30px'}}>
+            <div style={{width:'100px', height:'100px', backgroundColor:'gray'}}></div>
+            <p>{product.name} - ${product.price.toFixed(2)}</p>
+            <button style={{marginBottom:'20px'}} onClick={() => handleAddToCart(product)}>Add to Cart</button>
+          </div>
         ))}
-      </ul>
+      </div>
       <h1>Cart</h1>
       <ul>
         {cart.map((item) => (
